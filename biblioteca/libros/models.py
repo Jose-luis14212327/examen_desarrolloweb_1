@@ -2,5 +2,20 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.conf import settings
 
 # Create your models here.
+
+
+class Libros(models.Model):
+
+    Nombre = models.CharField(max_length=140)
+    Autor = models.CharField(max_length=200)
+    Editorial = models.CharField(max_length=400)
+    ISBN = models.CharField(max_length=250)
+    Precio = models.FloatField()
+    Creacion = models.DateTimeField(auto_now=True)
+
+    def Show(self):
+        Detalle = []
+        return Detalle
