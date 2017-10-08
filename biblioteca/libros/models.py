@@ -16,6 +16,5 @@ class Libros(models.Model):
     Precio = models.FloatField()
     Creacion = models.DateTimeField(auto_now=True)
 
-    def Show(self):
-        Detalle = []
-        return Detalle
+    def __str__(self):
+        return Libros.content
