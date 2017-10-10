@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link type="text/css" rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
-	<link type="text/css" rel="stylesheet" href="{% static 'mycss/cover.css' %}">
+	<link type="text/css" rel="stylesheet" href="{% static 'mycss/Cover.css' %}">
 	<script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
 </head>
 <body>
@@ -18,9 +18,8 @@
 					<div class="inner">
 						<h3 class="masthead-brand">Biblioteca</h3>
 						<nav class="nav nav-masthead">
-							<a class="nav-link active" href="#">Pagina principal</a>
-							<a class="nav-link" href="#">Lista de Libros</a>
-							<a class="nav-link" href="#">Registrar Libros</a>
+							<a class="nav-link active" href="">Pagina Principal</a>
+							<a class="nav-link" href="/libros/lista">Lista de Libros</a>
 						</nav>
 					</div>
 				</div>
@@ -29,7 +28,7 @@
 				<h1 class="cover-heading">Biblioteca</h1>
 				<p class="lead" style="color: #fff; font-style: bold;">Biblioteca compacta, solo disponemos de 10 :D!</p>
 				<p class="lead">
-					<a href="#" class="btn btn-lg btn-secondary">Lista de libros disponibles!</a>
+					<a href="/libros/lista" class="btn btn-lg btn-secondary">Lista de libros disponibles!</a>
 				</p>
 			</div>
 			<div class="mastfoot">

@@ -19,10 +19,14 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from .views import home
-#from libros.views import *
+from libros.views import lista_libros, detalle_libros
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home, name='home'),
+    url(r'^home/$', home, name='home'),
+    url(r'^libros/lista/$', lista_libros, name='lista'),
+    url(r'^libros/detalle/(?P<id>\d0)/$', detalle_libros, name='detalles'),
+    url(r'^libros/detalle/(?P<id>\d)/$', detalle_libros, name='detalles'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
