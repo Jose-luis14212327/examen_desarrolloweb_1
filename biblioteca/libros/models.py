@@ -17,4 +17,4 @@ class Libros(models.Model):
     Creacion = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return Libros.content
+        return self.Nombre
